@@ -1,34 +1,90 @@
-{% include 'header.html' %}
 
-    <h1 class="px-4 my-2 text-2xl text-center font-bold text-green-400">
-        On-The-Go Indexing
-    </h1>
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="/tailwind.config.js"></script>
+        <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+        
+        <script src="https://cdn.fluidplayer.com/v3/current/fluidplayer.min.js"></script>
+        
+        <title>
+            Sahil Nolia TG-INDEX
+        </title>
 
-    <div class="px-4 mx-auto my-2">
+<style>
 
-        <p class="text-center text-gray-700">
-            On-The-Go (OTG) Indexing. Index any public telegram channel or public telegram group on the go with it's username.
-        </p>
-
-    </div>
-
-    {% if error %}
-        <div id="alert" class="px-4 mx-auto my-2 text-center m-2 ">
-            <p class="text-white bg-red-500 w-auto inline-block px-4 py-2 rounded-lg"> {{error}} </p>
-        </div>
-        <script>
-        setTimeout(function(){
-            document.getElementById("alert").style.display = 'none';
-        }, 7000);
-        </script>
-    {% endif %}
-
-    <div class="px-4 mx-auto my-2">
-        <form class="my-2 text-center flex justify-center" action="/otg" method="POST">
-                <input class="px-4 py-2 rounded-l-full border border-r-0 border-teal-400 outline-none" type="text" name="id" placeholder="Enter username..." required>
-                <button class="px-4 py-2 bg-teal-400 border border-teal-400 hover:bg-white hover:text-teal-400 text-white rounded-r-full outline-none" type="submit">Get Result</button>
-        </form>
-    </div>
+	@import url('https://fonts.googleapis.com/css?family=Macondo');
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+    font-family: Macondo;
+    font-size: 24px;
+    width: auto;
+    cursor: url(http://ani.cursors-4u.net/cursors/cur-11/cur1089.cur),progress !important;
+}
 
 
-{% include 'footer.html' %}
+      .button {
+background-color: black;
+        -webkit-border-radius: 0px;
+        border-radius: 5px;
+        border: solid;
+        color: black;
+        display: inline-block;
+        font-size: 20px;
+        padding: 10px 10px;
+        text-align: center;
+        text-decoration: none;
+      }
+      @keyframes glowing {
+        0% {
+          background-color: black;
+          box-shadow: 0 0 20px black;
+        }
+        50% {
+          background-color: aqua;
+          box-shadow: 0 0 20px aqua;
+        }
+        100% {
+          background-color: aqua;
+          box-shadow: 0 0 5px aqua;
+        }
+      }
+      .button {
+        animation: glowing 1300ms infinite;
+      }
+    </style>
+
+    </head>
+    <body class="bg-black text-white" >
+
+        <div class="m-auto w-full xl:max-w-screen-xl min-h-screen">
+
+            <header class="">
+        
+<hr style="width:100%;">
+<br>
+
+
+            </header>
+
+
+
+
+<center><a href="/">
+<input type="button" value="Home" style="border: 3px solid yellow;color: #fff;border-radius: 5px;padding: 13px 25px;font-size: 25px;font-weight: bold;margin-bottom: 40px;background-color: yellow;color:yellow;background: none;"> </a>
+</center>
+<br>
+
+
+
+<center><a href="/-1001402008975">
+<input type="button" value="StreamX" style="border: 3px solid aqua;color: #fff;border-radius: 5px;padding: 13px 25px;font-size: 25px;font-weight: bold;margin-bottom: 40px;background-color: aqua;color:aqua;background: none;"> </a>
+</center>
+<br>
+
+
+<hr style="width:100%;">
