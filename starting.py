@@ -1,16 +1,6 @@
-FROM python:3.8.3-alpine
-
-RUN pip install --upgrade pip
-
-RUN adduser -D myuser
-USER myuser
-WORKDIR /home/myuser
-
-COPY --chown=myuser:myuser requirements.txt requirements.txt
-RUN pip install --user -r requirements.txt
-
-ENV PATH="/home/myuser/.local/bin:${PATH}"
-
-COPY --chown=myuser:myuser . .
-
-CMD ["python", "python3 -m app", "runserver", "0.0.0.0:8000"]
+import os
+os.system('pip3 install virtualenv')
+os.system('virtualenv venv')
+os.system('source venv/bin/activate')
+os.system('pip3 install -r requirements.txt')
+os.system('python3 -m app')
